@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+**
+** Copyright 2016, The Android Open Source Project
+**
+** Licensed under the Apache License, Version 2.0 (the "License")
+** you may not use this file except in compliance with the License.
+** You may obtain a copy of the License at
+**
+**     http://www.apache.org/licenses/LICENSE-2.0
+**
+** Unless required by applicable law or agreed to in writing, software
+** distributed under the License is distributed on an "AS IS" BASIS,
+** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+** See the License for the specific language governing permissions and
+** limitations under the License.
+*/
+-->
+<device name="Android">
+    <!-- All values are in mAh except as noted -->
+
+    <!-- Nothing -->
+    <item name="none">0</item>
+
+    <!-- This is the battery capacity in mAh -->
+    <item name="battery.capacity">4000</item>
+
+    <!-- Number of cores each CPU cluster contains -->
+    <array name="cpu.clusters.cores">
+        <value>2</value> <!-- Cluster 0 has 2 cores (cpu0, cpu1) -->
+        <value>2</value> <!-- Cluster 1 has 2 cores (cpu2, cpu3) -->
+    </array>
+
+    <!-- Power consumption when CPU is suspended -->
+    <item name="cpu.idle">0.1</item>
+
+    <!-- Different CPU speeds as reported in
+         /sys/devices/system/cpu/cpu0/cpufreq/scaling_available_frequencies -->
+    <array name="cpu.core_speeds.cluster0">
+        <value>307200</value> <!-- 307 MHz CPU speed -->
+        <value>384000</value> <!-- 384 MHz CPU speed -->
+        <value>460800</value> <!-- 460 MHz CPU speed -->
+        <value>537600</value> <!-- 537 MHz CPU speed -->
+        <value>614400</value> <!-- 614 MHz CPU speed -->
+        <value>691200</value> <!-- 691 MHz CPU speed -->
+        <value>768000</value> <!-- 768 MHz CPU speed -->
+        <value>844800</value> <!-- 844 MHz CPU speed -->
+        <value>902600</value> <!-- 902 MHz CPU speed -->
+        <value>979200</value> <!-- 979 MHz CPU speed -->
+        <value>1056000</value> <!-- 1056 MHz CPU speed -->
+        <value>1132800</value> <!-- 1132 MHz CPU speed -->
+        <value>1209600</value> <!-- 1209 MHz CPU speed -->
+        <value>1286400</value> <!-- 1286 MHz CPU speed -->
+        <value>1363200</value> <!-- 1363 MHz CPU speed -->
+        <value>1440000</value> <!-- 1440 MHz CPU speed -->
+        <value>1516800</value> <!-- 1516 MHz CPU speed -->
+        <value>1593600</value> <!-- 1593 MHz CPU speed -->
+        <value>2188800</value> <!-- 2188 MHz CPU speed -->
+    </array>
+    <!-- Different CPU speeds as reported in
+         /sys/devices/system/cpu/cpu2/cpufreq/scaling_available_frequencies -->
+    <array name="cpu.core_speeds.cluster1">
+        <value>307200</value> <!-- 307 MHz CPU speed -->
+        <value>384000</value> <!-- 384 MHz CPU speed -->
+        <value>460800</value> <!-- 460 MHz CPU speed -->
+        <value>537600</value> <!-- 537 MHz CPU speed -->
+        <value>614400</value> <!-- 614 MHz CPU speed -->
+        <value>691200</value> <!-- 691 MHz CPU speed -->
+        <value>748800</value> <!-- 748 MHz CPU speed -->
+        <value>825600</value> <!-- 825 MHz CPU speed -->
+        <value>902400</value> <!-- 902 MHz CPU speed -->
+        <value>979200</value> <!-- 979 MHz CPU speed -->
+        <value>1056000</value> <!-- 1056 MHz CPU speed -->
+        <value>1132800</value> <!-- 1132 MHz CPU speed -->
+        <value>1209600</value> <!-- 1209 MHz CPU speed -->
+        <value>1286400</value> <!-- 1286 MHz CPU speed -->
+        <value>1363200</value> <!-- 1363 MHz CPU speed -->
+        <value>1440000</value> <!-- 1440 MHz CPU speed -->
+        <value>1516800</value> <!-- 1516 MHz CPU speed -->
+        <value>1593600</value> <!-- 1593 MHz CPU speed -->
+        <value>1670400</value> <!-- 1670 MHz CPU speed -->
+        <value>1747200</value> <!-- 1747 MHz CPU speed -->
+        <value>1824000</value> <!-- 1824 MHz CPU speed -->
+        <value>1900800</value> <!-- 1900 MHz CPU speed -->
+        <value>1977600</value> <!-- 1977 MHz CPU speed -->
+        <value>2054400</value> <!-- 2054 MHz CPU speed -->
+        <value>2150400</value> <!-- 2150 MHz CPU speed -->
+        <value>2246400</value> <!-- 2246 MHz CPU speed -->
+        <value>2342400</value> <!-- 2342 MHz CPU speed -->
+    </array>
+    <!-- Additional power used by a CPU from cluster 0 when running at different
+         speeds. Currently this measurement also includes cluster cost. -->
+    <array name="cpu.core_power.cluster0">
+        <value>110</value> <!-- 307 MHz CPU speed -->
+        <value>113</value> <!-- 384 MHz CPU speed -->
+        <value>124</value> <!-- 460 MHz CPU speed -->
+        <value>134</value> <!-- 537 MHz CPU speed -->
+        <value>147</value> <!-- 614 MHz CPU speed -->
+        <value>162</value> <!-- 691 MHz CPU speed -->
+        <value>179</value> <!-- 768 MHz CPU speed -->
+        <value>181</value> <!-- 844 MHz CPU speed -->
+        <value>199</value> <!-- 902 MHz CPU speed -->
+        <value>232</value> <!-- 979 MHz CPU speed -->
+        <value>250</value> <!-- 1056 MHz CPU speed -->
+        <value>288</value> <!-- 1132 MHz CPU speed -->
+        <value>316</value> <!-- 1209 MHz CPU speed -->
+        <value>325</value> <!-- 1286 MHz CPU speed -->
+        <value>354</value> <!-- 1363 MHz CPU speed -->
+        <value>394</value> <!-- 1440 MHz CPU speed -->
+        <value>437</value> <!-- 1516 MHz CPU speed -->
+        <value>488</value> <!-- 1593 MHz CPU speed -->
+        <value>1361</value> <!-- 2188 MHz CPU speed -->
+    </array>
+    <!-- Additional power used by a CPU from cluster 1 when running at different
+         speeds. Currently this measurement also includes cluster cost. -->
+    <array name="cpu.core_power.cluster1">
+        <value>104</value> <!-- 307 MHz CPU speed -->
+        <value>117</value> <!-- 384 MHz CPU speed -->
+        <value>131</value> <!-- 460 MHz CPU speed -->
+        <value>142</value> <!-- 537 MHz CPU speed -->
+        <value>154</value> <!-- 614 MHz CPU speed -->
+        <value>167</value> <!-- 691 MHz CPU speed -->
+        <value>178</value> <!-- 748 MHz CPU speed -->
+        <value>182</value> <!-- 825 MHz CPU speed -->
+        <value>197</value> <!-- 902 MHz CPU speed -->
+        <value>234</value> <!-- 979 MHz CPU speed -->
+        <value>259</value> <!-- 1056 MHz CPU speed -->
+        <value>286</value> <!-- 1132 MHz CPU speed -->
+        <value>314</value> <!-- 1209 MHz CPU speed -->
+        <value>345</value> <!-- 1286 MHz CPU speed -->
+        <value>356</value> <!-- 1363 MHz CPU speed -->
+        <value>389</value> <!-- 1440 MHz CPU speed -->
+        <value>430</value> <!-- 1516 MHz CPU speed -->
+        <value>480</value> <!-- 1593 MHz CPU speed -->
+        <value>524</value> <!-- 1670 MHz CPU speed -->
+        <value>583</value> <!-- 1747 MHz CPU speed -->
+        <value>660</value> <!-- 1824 MHz CPU speed -->
+        <value>729</value> <!-- 1900 MHz CPU speed -->
+        <value>808</value> <!-- 1977 MHz CPU speed -->
+        <value>884</value> <!-- 2054 MHz CPU speed -->
+        <value>1043</value> <!-- 2150 MHz CPU speed -->
+        <value>1182</value> <!-- 2246 MHz CPU speed -->
+        <value>1361</value> <!-- 2342 MHz CPU speed -->
+    </array>
+
+    <!-- Additional power used when screen is turned on at minimum brightness -->
+    <item name="screen.on">60</item>
+    <!-- Additional power used when screen is at maximum brightness, compared to
+         screen at minimum brightness -->
+    <item name="screen.full">300</item>
+
+    <!-- Average power used by the camera flash module when on -->
+    <item name="camera.flashlight">160</item>
+    <!-- Average power use by the camera subsystem for a typical camera
+         application. Intended as a rough estimate for an application running a
+         preview and capturing approximately 10 full-resolution pictures per
+         minute. -->
+    <item name="camera.avg">600</item>
+
+    <!-- Additional power used when audio decoding/encoding via DSP -->
+    <item name="dsp.audio">20</item>
+
+    <!-- Additional power used when GPS is acquiring a signal -->
+    <item name="gps.on">48</item>
+
+    <!-- Additional power used when Wi-Fi is turned on but not receiving,
+         transmitting, or scanning -->
+    <item name="wifi.on">5</item>
+    <!-- Additional power used when transmitting or receiving over Wi-Fi -->
+    <item name="wifi.active">110</item>
+    <!-- Additional power used when Wi-Fi is scanning for access points -->
+    <item name="wifi.scan">60</item>
+
+    <!-- mA. Current figures based on .0801 s/c and 75.48mA while scanning -->
+    <array name="wifi.batchedscan">
+        <value>0.0002</value> <!-- 1-8/hr -->
+        <value>0.002</value>  <!-- 9-64/hr -->
+        <value>0.02</value>   <!-- 65-512/hr -->
+        <value>0.2</value>    <!-- 513-4,096/hr -->
+        <value>2</value>    <!-- 4097-/hr -->
+    </array>
+
+    <!-- Additional power used when cellular radio is transmitting/receiving -->
+    <item name="radio.active">150</item>
+    <!-- The current consumed by the radio when it is scanning for a signal -->
+    <item name="radio.scanning">20</item>
+    <!-- Current consumed by the radio at different signal strengths, when paging -->
+    <array name="radio.on"> <!-- Strength 0 to BINS-1 -->
+        <value>5</value>
+        <value>3</value>
+    </array>
+
+</device>
