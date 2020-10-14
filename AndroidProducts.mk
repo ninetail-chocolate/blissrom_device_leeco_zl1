@@ -17,4 +17,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/bliss_zl1.mk
 
 COMMON_LUNCH_CHOICES := \
-	bliss_zl1-user
+	bliss_zl1-user \
+	bliss_zl1-userdebug
